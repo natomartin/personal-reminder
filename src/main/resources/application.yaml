@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: personal-reminder
+  datasource:
+    url: jdbc:mysql://localhost:3306/personal_reminder
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update   # create, create-drop, update, validate, none
+    show-sql: true
+    properties:
+      hibernate:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
